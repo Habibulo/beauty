@@ -45,6 +45,7 @@ export default function UserPage() {
                       }
                     className={"order-user-avatar"}
                   />
+                  
                   <div className={"order-user-icon-box"}>
                     <img src={
                         authMember?.memberType === memberType.ADMIN

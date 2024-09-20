@@ -116,7 +116,7 @@ export function HomeNavbar(props: HomeNavbarProps) {
                 className="user-avatar"
                 src={
                   authMember?.memberImage
-                    ? `${serverApi}${authMember?.memberImage}`
+                    ? `${serverApi}/${authMember?.memberImage}`
                     : "/icons/default-user.svg"
                 }
                 aria-haspopup={"true"}
@@ -171,7 +171,7 @@ export function HomeNavbar(props: HomeNavbarProps) {
           <Stack className={"detail"}>
             <Box className="head-main-txt">Care For Your Skin, Care For Your Beauty</Box>
             <Box className="wel-txt">The best dermatologists in Korea offer premium aesthetics.</Box>
-            <Box className="service-txt">24hours Service</Box>
+            <Box className="service-txt">Authentic Products</Box>
             <Box className="signup">
               {!authMember ? (
                 <Button

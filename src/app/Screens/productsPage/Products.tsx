@@ -26,8 +26,6 @@ interface ProductsProps {
   onAdd: (item: CartItem) => void
 }
 
-
-
 const actionDispatch = (dispatch: Dispatch) => ({
   setProducts: (data: Product[]) => dispatch(setProducts(data)),
 });
@@ -149,20 +147,17 @@ const chooseDishHandler = (id: string) => {
               >
                 Views
               </Button>
-              <Button
-                variant={"contained"}
-                color={ productSearch.productCategory === ProductCategory.OTHER ? "primary" : "secondary"}
-                className={"order"}
-                onClick={() => searchOrderHandler(ProductCategory.OTHER)}
-              >
-                Others
-              </Button>
             </Stack>
           </Stack>
 
           <Stack className={"list-category-section"}>
             <Stack className={"product-category"}>
               <div className={"category-main"}>
+                <Button variant={"contained"} 
+                  color={ productSearch.productCategory === ProductCategory.OTHER ? "primary" : "secondary"} 
+                  onClick={() => searchCollectionHandler(ProductCategory.OTHER)}>
+                  Other
+                </Button>
                 <Button variant={"contained"} 
                   color={ productSearch.productCategory === ProductCategory.GROOMING ? "primary" : "secondary"} 
                   onClick={() => searchCollectionHandler(ProductCategory.GROOMING)}>
@@ -284,7 +279,7 @@ const chooseDishHandler = (id: string) => {
 
       <div className={"brands-logo"}>
         <Container className={"family-brands"}>
-          <Box className={"category-title"}>Our Family Brands</Box>
+          <Box className={"category-title"}>Top Model</Box>
           <Stack className={"brand-list"}>
             <Box className={"review-box"}>
               <img src={"/img/gurme.webp"} />

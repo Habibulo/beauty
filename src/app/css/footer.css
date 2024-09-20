@@ -14,7 +14,14 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  z-index: 1; /* Ensure sns-context is above the footer */
+  position: relative; /* Required to apply z-index */
 }
+
+.sns-context img {
+  filter: none; /* Ensures no color filtering is applied */
+}
+
 
 .foot-category-title {
   width: 106px;

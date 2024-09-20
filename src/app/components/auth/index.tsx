@@ -139,7 +139,7 @@ export default function AuthenticationModal(props: AuthenticationModalProps) {
               <TextField
                 sx={{ marginTop: "7px" }}
                 id="outlined-basic"
-                label="username"
+                label="Login"
                 variant="outlined"
                 onChange={handleUsername}
                 onKeyDown={handlePassowrdKeyDown}
@@ -147,14 +147,16 @@ export default function AuthenticationModal(props: AuthenticationModalProps) {
               <TextField
                 sx={{ my: "17px" }}
                 id="outlined-basic"
-                label="phone number"
+                label="Phone number"
+                type="number"
                 variant="outlined"
                 onChange={handlePhone}
               />
               <TextField
                 id="outlined-basic"
-                label="password"
+                label="Password"
                 variant="outlined"
+                type="password"
                 onChange={handlePassword}
               />
               <Fab

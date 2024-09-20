@@ -11,7 +11,7 @@ const Footers = styled.div`
   background-image: url(/img/pink-bg.jpg);
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.3); /* 50% transparent white */
-  background-blend-mode: lighten; /* or multiply, overlay depending on the effect */
+  background-blend-mode: normal; /* or multiply, overlay depending on the effect */
 `;
 
 export default function Footer() {
