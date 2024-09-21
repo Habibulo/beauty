@@ -162,7 +162,7 @@ export default function AuthenticationModal(props: AuthenticationModalProps) {
               <Fab
                 sx={{ marginTop: "30px", width: "120px" }}
                 variant="extended"
-                color="primary"
+                style={{backgroundColor: "rgb(191, 97, 89)", color: "white"}}
                 onClick={handleSignupRequest}
               >
                 <LoginIcon sx={{ mr: 1 }} />
@@ -191,7 +191,7 @@ export default function AuthenticationModal(props: AuthenticationModalProps) {
             direction={"row"}
             sx={{ width: "700px" }}
           >
-            <ModalImg src={"/img/auth.webp"} alt="camera" />
+            <ModalImg src={"/img/authLogin.webp"} alt="camera" />
             <Stack
               sx={{
                 marginLeft: "65px",
@@ -218,7 +218,7 @@ export default function AuthenticationModal(props: AuthenticationModalProps) {
               <Fab
                 sx={{ marginTop: "27px", width: "120px" }}
                 variant={"extended"}
-                color={"primary"}
+                style={{backgroundColor: "rgb(191, 97, 89)", color: "white"}}
                 onClick={handleLoginRequest}
               >
                 <LoginIcon sx={{ mr: 1 }} />

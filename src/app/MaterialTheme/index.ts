@@ -15,11 +15,11 @@ const light = {
 			paper: common.white,
 		},
 		primary: {
-			contrastText: "rgb(191,97,89)",
+			contrastText: "white",
 			main: '#343434',
 		},
 		secondary: {
-			contrastText: '#343434',
+			contrastText: 'white',
 			main: 'rgb(191,97,89)',
 		},
 		text: {

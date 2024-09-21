@@ -112,7 +112,7 @@ export default function Basket(props: BasketProps) {
         <Stack className={"basket-frame"}>
           <Box className={"all-check-box"}>
             {cartItems.length === 0 ? (
-              <div>Cart is empty!</div>
+              <div style={{color: "white"}} >Cart is empty!</div>
             ) : (
               <Stack flexDirection={"row"}>
                 <DeleteForever
